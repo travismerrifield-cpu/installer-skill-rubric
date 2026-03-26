@@ -20,7 +20,7 @@
 
 ---
 
-## MODULE 1: Professionalism & Customer Communication
+## Professionalism & Customer Communication
 
 ### Arriving on Site (Meet & Greet)
 
@@ -54,7 +54,7 @@
 
 ---
 
-## MODULE 2: Jetson System Knowledge
+## Jetson System Knowledge
 
 | Skill | Apprentice | Installer | Lead |
 |-------|------------|-----------|------|
@@ -72,7 +72,7 @@
 
 ---
 
-## MODULE 3: Line Set Handling
+## Line Set Handling
 
 ### Line Set Unrolling
 
@@ -110,7 +110,7 @@
 
 ---
 
-## MODULE 4: Line Set Connections
+## Line Set Connections
 
 ### Press Fitting (RLS Tool)
 
@@ -148,7 +148,7 @@
 
 ---
 
-## MODULE 5: Equipment Removal
+## Equipment Removal
 
 ### Removing Old Condensing Unit (ODU)
 
@@ -180,7 +180,7 @@
 
 ---
 
-## MODULE 6: Sheet Metal Fabrication
+## Sheet Metal Fabrication
 
 ### Supply Plenum Transitions
 
@@ -208,7 +208,7 @@
 
 ---
 
-## MODULE 7: Sensor Installation
+## Sensor Installation
 
 | Skill | Apprentice | Installer | Lead |
 |-------|------------|-----------|------|
@@ -221,7 +221,7 @@
 
 ---
 
-## MODULE 8: Condensate Pump Installation
+## Condensate Pump Installation
 
 | Skill | Apprentice | Installer | Lead |
 |-------|------------|-----------|------|
@@ -235,7 +235,7 @@
 
 ---
 
-## MODULE 9: ODU Base & Stand
+## ODU Base & Stand
 
 | Skill | Apprentice | Installer | Lead |
 |-------|------------|-----------|------|
@@ -248,7 +248,7 @@
 
 ---
 
-## MODULE 10: Line Set Cleaning
+## Line Set Cleaning
 
 | Skill | Apprentice | Installer | Lead |
 |-------|------------|-----------|------|
@@ -263,7 +263,7 @@
 
 ---
 
-## MODULE 11: Pressure Testing (Nitrogen)
+## Pressure Testing (Nitrogen)
 
 ### 3/4/5-Ton Systems
 
@@ -288,7 +288,7 @@
 
 ---
 
-## MODULE 12: Vacuum Testing
+## Vacuum Testing
 
 | Skill | Apprentice | Installer | Lead |
 |-------|------------|-----------|------|
@@ -304,7 +304,7 @@
 
 ---
 
-## MODULE 13: Refrigerant Charging
+## Refrigerant Charging
 
 | Skill | Apprentice | Installer | Lead |
 |-------|------------|-----------|------|
@@ -320,7 +320,7 @@
 
 ---
 
-## MODULE 14: Line Set Routing & Wall Penetrations
+## Line Set Routing & Wall Penetrations
 
 | Skill | Apprentice | Installer | Lead |
 |-------|------------|-----------|------|
@@ -337,7 +337,7 @@
 
 ---
 
-## MODULE 15: Wiring the Jetson Hub
+## Wiring the Jetson Hub
 
 | Skill | Apprentice | Installer | Lead |
 |-------|------------|-----------|------|
@@ -353,7 +353,7 @@
 
 ---
 
-## MODULE 16: Hub Provisioning
+## Hub Provisioning
 
 | Skill | Apprentice | Installer | Lead |
 |-------|------------|-----------|------|
@@ -368,7 +368,7 @@
 
 ---
 
-## MODULE 17: System Commissioning
+## System Commissioning
 
 | Skill | Apprentice | Installer | Lead |
 |-------|------------|-----------|------|
