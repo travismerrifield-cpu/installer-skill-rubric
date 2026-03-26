@@ -135,6 +135,60 @@
     .role-lead { background: #EDFAF3; border-color: #3DD56D; }
     .role-lead .role-name { color: #1B3A28; }
 
+    /* ── Job Level Overview ── */
+    .overview-section {
+      margin-bottom: 48px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #e2ddd3;
+    }
+    .overview-header {
+      background: #1B3A28;
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 10px 16px;
+    }
+    .overview-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+      background: #fff;
+    }
+    .overview-table thead tr th {
+      background: #2C5235;
+      color: #fff;
+      padding: 10px 16px;
+      text-align: left;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .overview-table tbody tr td {
+      padding: 18px 16px;
+      border-bottom: 1px solid #ede9e0;
+      vertical-align: top;
+      min-height: 60px;
+    }
+    .overview-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+    .level-cell {
+      font-weight: 700;
+      font-size: 0.9rem;
+      width: 130px;
+      white-space: nowrap;
+    }
+    .apprentice-label { color: #92600A; }
+    .installer-label  { color: #1A3A8F; }
+    .lead-label       { color: #1B3A28; }
+    .row-apprentice { background: #FFFDF5; }
+    .row-installer  { background: #F5F8FF; }
+    .row-lead       { background: #F2FAF5; }
+
     /* ── Module sections ── */
     #content h1 { display: none; }
 
@@ -302,6 +356,45 @@
         <div class="role-name">Lead</div>
         <div class="role-desc">Level 4 across core skills. Runs the crew, coaches apprentices, owns quality on site.</div>
       </div>
+    </div>
+
+    <!-- Job Level Overview Table -->
+    <div class="overview-section">
+      <div class="overview-header">Job Level Overview</div>
+      <table class="overview-table">
+        <thead>
+          <tr>
+            <th>Job Level</th>
+            <th>Installation Skill</th>
+            <th>Pay</th>
+            <th>Quality Measure</th>
+            <th>Timeline</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row-apprentice">
+            <td class="level-cell apprentice-label">Apprentice</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="row-installer">
+            <td class="level-cell installer-label">Installer</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="row-lead">
+            <td class="level-cell lead-label">Lead</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <div id="content">Loading...</div>
