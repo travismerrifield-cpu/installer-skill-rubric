@@ -420,8 +420,8 @@
         </thead>
         <tbody>
           <tr class="row-lead">
-            <td class="level-cell"><select class="title-select lead-select"><option value="">—</option><option>Apprentice</option><option>Installer</option><option selected>Lead</option></select></td>
-            <td><select class="level-select lead-select"><option value="">—</option><option>0 — Not Trained</option><option>1 — In Training</option><option>2 — Supervised</option><option>3 — Independent</option><option>4 — Can Train Others</option></select></td>
+            <td class="level-cell"><select id="title-select-1" class="title-select lead-select" onchange="updateLevelOptions(this, 'level-select-1')"><option value="">—</option><option value="apprentice">Apprentice</option><option value="installer">Installer</option><option value="lead" selected>Lead</option></select></td>
+            <td><select id="level-select-1" class="level-select lead-select"><option value="">—</option><option>Level 7</option><option>Level 8</option><option>Level 9</option></select></td>
             <td></td>
             <td></td>
             <td></td>
@@ -454,6 +454,38 @@
   <footer>
     <img src="jetson-logo.png" alt="Jetson" style="height:20px;opacity:0.6;display:block;margin-left:auto;margin-right:auto;" />
   </footer>
+
+  <script>
+    const levelOptions = {
+      apprentice: ["Level 1", "Level 2", "Level 3"],
+      installer:  ["Level 4", "Level 5", "Level 6"],
+      lead:       ["Level 7", "Level 8", "Level 9"],
+    };
+    const titleColors = {
+      apprentice: ["apprentice-select", "#92600A", "#FEF9EE"],
+      installer:  ["installer-select",  "#1A3A8F", "#EEF4FF"],
+      lead:       ["lead-select",       "#1B3A28", "#EDFAF3"],
+    };
+
+    function updateLevelOptions(titleSelect, levelSelectId) {
+      const val = titleSelect.value;
+      const levelSelect = document.getElementById(levelSelectId);
+
+      // Update level dropdown options
+      levelSelect.innerHTML = '<option value="">—</option>';
+      if (val && levelOptions[val]) {
+        levelOptions[val].forEach(opt => {
+          const o = document.createElement("option");
+          o.textContent = opt;
+          levelSelect.appendChild(o);
+        });
+      }
+
+      // Re-color both selects
+      titleSelect.className = "title-select " + (val ? titleColors[val][0] : "");
+      levelSelect.className = "level-select " + (val ? titleColors[val][0] : "");
+    }
+  </script>
 
   <script>
     fetch("Installer_Skills_Matrix.md")
