@@ -325,12 +325,12 @@
     }
 
     /* Role columns */
-    #content table th:nth-child(2),
     #content table th:nth-child(3),
     #content table th:nth-child(4),
-    #content table td:nth-child(2),
+    #content table th:nth-child(5),
     #content table td:nth-child(3),
-    #content table td:nth-child(4) {
+    #content table td:nth-child(4),
+    #content table td:nth-child(5) {
       display: none;
     }
 
@@ -499,8 +499,26 @@
       .then(r => r.text())
       .then(text => {
         document.getElementById("content").innerHTML = marked.parse(text);
+        addQualityMetricColumn();
         initProfessionalismSection();
       });
+
+    function addQualityMetricColumn() {
+      document.querySelectorAll("#content table").forEach(table => {
+        // Add header after first th
+        const headerRow = table.querySelector("thead tr");
+        if (headerRow) {
+          const th = document.createElement("th");
+          th.textContent = "Quality Metric";
+          headerRow.insertBefore(th, headerRow.children[1]);
+        }
+        // Add empty cell after first td in each body row
+        table.querySelectorAll("tbody tr").forEach(row => {
+          const td = document.createElement("td");
+          row.insertBefore(td, row.children[1]);
+        });
+      });
+    }
 
     function initProfessionalismSection() {
       const content = document.getElementById("content");
