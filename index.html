@@ -494,12 +494,15 @@
       const quality = document.getElementById("cell-quality");
       const pay = document.getElementById("cell-pay");
 
+      const timeline = document.getElementById("cell-timeline");
       if (val === "Level 10") {
         quality.textContent = "Completes all jobs under 8 hours, can finish all job skills in the expected time, exceeds all quality expectations, and crew reviews average 5 stars.";
         pay.textContent = "$X.xx";
+        timeline.textContent = "+2.5 years at Jetson";
       } else {
         quality.textContent = "";
         pay.textContent = "";
+        timeline.textContent = "";
       }
     }
   </script>
