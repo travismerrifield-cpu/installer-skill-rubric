@@ -1,24 +1,5 @@
 # Jetson Installer Skills Matrix
 
-## Proficiency Scale
-
-| Level | Code | Definition |
-|-------|------|------------|
-| Not Trained | 0 | Has not received any training in this area |
-| In Training | 1 | Currently learning; requires direct supervision |
-| Supervised | 2 | Can perform with oversight; not yet independent |
-| Independent | 3 | Can perform independently to Jetson standard |
-| Can Train Others | 4 | Mastery level; qualified to teach and coach this skill |
-
-## Job Level Expectations
-
-| Role | Expected Minimum |
-|------|-----------------|
-| Apprentice | Level 1–2 across core skills |
-| Installer | Level 3 across all core skills |
-| Lead | Level 4 across all core skills; Level 3 on advanced |
-
----
 
 ## Professionalism & Customer Communication
 
