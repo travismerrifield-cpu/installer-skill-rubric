@@ -525,14 +525,11 @@
           th.textContent = "Quality Metric";
           headerRow.insertBefore(th, headerRow.children[1]);
         }
-        // Add one merged cell spanning all body rows
-        const bodyRows = table.querySelectorAll("tbody tr");
-        if (bodyRows.length > 0) {
+        // Add empty cell after first td in each body row
+        table.querySelectorAll("tbody tr").forEach(row => {
           const td = document.createElement("td");
-          td.rowSpan = bodyRows.length;
-          td.style.verticalAlign = "top";
-          bodyRows[0].insertBefore(td, bodyRows[0].children[1]);
-        }
+          row.insertBefore(td, row.children[1]);
+        });
       });
     }
 
