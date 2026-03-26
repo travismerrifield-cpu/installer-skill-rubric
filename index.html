@@ -135,12 +135,13 @@
     .role-lead { background: #EDFAF3; border-color: #3DD56D; }
     .role-lead .role-name { color: #1B3A28; }
 
-    /* ── Job Title Overview ── */
+    /* ── Job Title Overview Matrix ── */
     .overview-section {
       margin-bottom: 48px;
       border-radius: 10px;
       overflow: hidden;
       border: 1px solid #e2ddd3;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
     .overview-header {
       background: #1B3A28;
@@ -156,22 +157,37 @@
       border-collapse: collapse;
       font-size: 0.85rem;
       background: #fff;
+      table-layout: fixed;
     }
     .overview-table thead tr th {
       background: #2C5235;
       color: #fff;
-      padding: 10px 16px;
-      text-align: left;
+      padding: 12px 16px;
+      text-align: center;
       font-size: 0.72rem;
       font-weight: 600;
       letter-spacing: 0.06em;
       text-transform: uppercase;
+      border-right: 1px solid #3a6b4a;
+    }
+    .overview-table thead tr th:first-child {
+      text-align: left;
+      width: 140px;
+    }
+    .overview-table thead tr th:last-child {
+      border-right: none;
     }
     .overview-table tbody tr td {
-      padding: 18px 16px;
+      padding: 20px 16px;
       border-bottom: 1px solid #ede9e0;
+      border-right: 1px solid #ede9e0;
       vertical-align: top;
-      min-height: 60px;
+      height: 90px;
+      font-size: 0.83rem;
+      color: #333;
+    }
+    .overview-table tbody tr td:last-child {
+      border-right: none;
     }
     .overview-table tbody tr:last-child td {
       border-bottom: none;
@@ -179,15 +195,16 @@
     .level-cell {
       font-weight: 700;
       font-size: 0.9rem;
-      width: 130px;
       white-space: nowrap;
+      text-align: left;
+      vertical-align: middle !important;
     }
-    .apprentice-label { color: #92600A; }
-    .installer-label  { color: #1A3A8F; }
-    .lead-label       { color: #1B3A28; }
-    .row-apprentice { background: #FFFDF5; }
-    .row-installer  { background: #F5F8FF; }
-    .row-lead       { background: #F2FAF5; }
+    .apprentice-label { color: #92600A; background: #FEF9EE; }
+    .installer-label  { color: #1A3A8F; background: #EEF4FF; }
+    .lead-label       { color: #1B3A28; background: #EDFAF3; }
+    .row-apprentice td:not(.level-cell) { background: #FFFDF7; }
+    .row-installer  td:not(.level-cell) { background: #F8FAFF; }
+    .row-lead       td:not(.level-cell) { background: #F5FBF7; }
 
     /* ── Module sections ── */
     #content h1 { display: none; }
