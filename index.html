@@ -464,6 +464,10 @@
       // Re-color both selects
       titleSelect.className = "title-select " + (val ? titleColors[val][0] : "");
       levelSelect.className = "level-select " + (val ? titleColors[val][0] : "");
+
+      // Show Professionalism & Customer Communication only for Certified Jetson Installer
+      const profSection = document.getElementById("professionalism-section");
+      if (profSection) profSection.style.display = (val === "certified") ? "" : "none";
     }
   </script>
 
@@ -472,7 +476,32 @@
       .then(r => r.text())
       .then(text => {
         document.getElementById("content").innerHTML = marked.parse(text);
+        initProfessionalismSection();
       });
+
+    function initProfessionalismSection() {
+      const content = document.getElementById("content");
+      let profHeading = null;
+      content.querySelectorAll("h2").forEach(h => {
+        if (h.textContent.trim() === "Professionalism & Customer Communication") profHeading = h;
+      });
+      if (!profHeading) return;
+
+      // Collect everything in this section until the next h2
+      const elements = [profHeading];
+      let next = profHeading.nextElementSibling;
+      while (next && next.tagName !== "H2") {
+        elements.push(next);
+        next = next.nextElementSibling;
+      }
+
+      // Wrap in a single div and hide by default
+      const wrapper = document.createElement("div");
+      wrapper.id = "professionalism-section";
+      wrapper.style.display = "none";
+      profHeading.parentNode.insertBefore(wrapper, profHeading);
+      elements.forEach(el => wrapper.appendChild(el));
+    }
   </script>
 </body>
 </html>
