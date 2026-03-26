@@ -14,8 +14,8 @@
 
 | Role | Expected Minimum |
 |------|-----------------|
-| Helper | Level 1–2 across core skills |
-| Technician | Level 3 across all core skills |
+| Apprentice | Level 1–2 across core skills |
+| Installer | Level 3 across all core skills |
 | Lead | Level 4 across all core skills; Level 3 on advanced |
 
 ---
@@ -24,8 +24,8 @@
 
 ### Arriving on Site (Meet & Greet)
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Introduces self, crew, and company clearly and professionally | 2 | 3 | 4 |
 | Confirms scope of work in simple, jargon-free terms | 2 | 3 | 4 |
 | Sets expectations for duration, noise, and power interruptions | 2 | 3 | 4 |
@@ -40,8 +40,8 @@
 
 ### Departing the Site
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Confirms all work is completed and site is clean | 2 | 3 | 4 |
 | Walks homeowner through thermostat operation | 1 | 3 | 4 |
 | Explains heat pump operation vs. traditional HVAC | 1 | 3 | 4 |
@@ -56,8 +56,8 @@
 
 ## MODULE 2: Jetson System Knowledge
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Identifies all major components of the Jetson Air System | 2 | 3 | 4 |
 | Explains the function of the ODU (compressor, base/pad, stand, wall bracing) | 1 | 3 | 4 |
 | Explains the function of the IDU (evaporator, coil, blower, condensate) | 1 | 3 | 4 |
@@ -76,8 +76,8 @@
 
 ### Line Set Unrolling
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Explains why improper unrolling causes damage | 1 | 3 | 4 |
 | Correctly unrolls line set using the walk-out method | 2 | 3 | 4 |
 | Unrolls on flat, smooth ground without kinks or flat spots | 2 | 3 | 4 |
@@ -86,8 +86,8 @@
 
 ### Line Set Cutting
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Measures and marks cut locations accurately (within ±⅛") | 2 | 3 | 4 |
 | Uses pipe cutter correctly (snug, not over-tightened; 2–3 rotation scoring) | 2 | 3 | 4 |
 | Produces clean, square cuts without deforming the pipe | 2 | 3 | 4 |
@@ -98,8 +98,8 @@
 
 ### Line Set Bending
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Cuts insulation without scoring the pipe | 2 | 3 | 4 |
 | Makes a 90° bend meeting radius spec with no visible flattening | 1 | 3 | 4 |
 | Makes offset bends with equal angles and correct spacing | 1 | 3 | 4 |
@@ -114,8 +114,8 @@
 
 ### Press Fitting (RLS Tool)
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Inspects O-rings and fittings before use | 2 | 3 | 4 |
 | Cleans outside of tubing with Scotch-Brite (spinning motion, not lengthwise) | 2 | 3 | 4 |
 | Marks fitting depth with depth gauge | 2 | 3 | 4 |
@@ -127,8 +127,8 @@
 
 ### Flaring (NAVAC Tool)
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Reams inside of line set before flaring | 2 | 3 | 4 |
 | Slides flare nut onto tubing (correct orientation) before flaring | 2 | 3 | 4 |
 | Inserts tubing to correct depth in flaring tool block | 2 | 3 | 4 |
@@ -138,8 +138,8 @@
 
 ### Flare Nut Torquing
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Applies oil/Nylog to flare face before attaching | 2 | 3 | 4 |
 | Hand-tightens before using torque wrench | 2 | 3 | 4 |
 | Uses proper two-wrench (back-wrench) technique | 2 | 3 | 4 |
@@ -152,8 +152,8 @@
 
 ### Removing Old Condensing Unit (ODU)
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Disconnects electrical at disconnect and breaker; confirms absence of voltage | 1 | 3 | 4 |
 | Inspects recovery cylinder (no damage, correct refrigerant, within 5-year date) | 1 | 3 | 4 |
 | Sets up recovery cylinder on level scale; zeros scale | 1 | 3 | 4 |
@@ -167,8 +167,8 @@
 
 ### Removing Old Forced Air Unit (IDU)
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Confirms electricity is OFF; uses voltage tester | 1 | 3 | 4 |
 | Shuts off gas at meter; disconnects and caps gas line | 1 | 3 | 4 |
 | Caps flue pipe to prevent carbon monoxide intrusion | 1 | 3 | 4 |
@@ -184,8 +184,8 @@
 
 ### Supply Plenum Transitions
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Correctly measures air handler outlet dimensions | 1 | 3 | 4 |
 | Safely cuts sheet metal using snips and folding bar | 1 | 3 | 4 |
 | Notches V's in corners correctly | 1 | 3 | 4 |
@@ -197,8 +197,8 @@
 
 ### Return Air Base Can
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Measures and plans base can dimensions correctly | 1 | 3 | 4 |
 | Cuts and bends all panels cleanly | 1 | 3 | 4 |
 | Assembles base can square and level | 1 | 3 | 4 |
@@ -210,8 +210,8 @@
 
 ## MODULE 7: Sensor Installation
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Selects correct plenum for Temperature & Humidity Sensor (supply air) | 1 | 3 | 4 |
 | Marks and drills sensor opening without dropping shavings into plenum | 2 | 3 | 4 |
 | Installs T&H sensor in correct orientation; secures with screws | 2 | 3 | 4 |
@@ -223,8 +223,8 @@
 
 ## MODULE 8: Condensate Pump Installation
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Determines correct pump location (level, accessible, below IDU drain outlet) | 1 | 3 | 4 |
 | Installs trap and PVC drain line with correct slope to pump | 1 | 3 | 4 |
 | Installs overflow switch in IDU overflow port | 1 | 3 | 4 |
@@ -237,8 +237,8 @@
 
 ## MODULE 9: ODU Base & Stand
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Prepares level gravel base (¾" then ¼" gravel, tamped) | 2 | 3 | 4 |
 | Confirms base pad is level in all directions | 2 | 3 | 4 |
 | Assembles ODU stand to correct dimensions for unit size | 1 | 3 | 4 |
@@ -250,8 +250,8 @@
 
 ## MODULE 10: Line Set Cleaning
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Explains why line set cleaning is required | 1 | 3 | 4 |
 | Flushes Rx11 solvent for correct duration (20–30 sec per 50' for ⅜"; 60–90 sec for ¾") | 1 | 3 | 4 |
 | Flushes from inside the home toward outside | 2 | 3 | 4 |
@@ -267,8 +267,8 @@
 
 ### 3/4/5-Ton Systems
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Confirms all connections are exposed before pressurizing | 1 | 3 | 4 |
 | Removes Schrader cores from both VCRTs | 1 | 3 | 4 |
 | Connects hoses correctly (YELLOW hose to ⅜" liquid; pressure probe to ¾" suction) | 1 | 3 | 4 |
@@ -280,8 +280,8 @@
 
 ### 2-Ton Systems (Additional Requirements)
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Confirms EEV is open by verifying nitrogen flow from loosened ⅜" flare fitting | 1 | 3 | 4 |
 | Places system in Recovery Mode (Menu n122) when EEV is closed | 1 | 3 | 4 |
 | Torques ⅜" flare nut to 26 ft-lbs after purge confirmation | 1 | 3 | 4 |
@@ -290,8 +290,8 @@
 
 ## MODULE 12: Vacuum Testing
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Confirms system passed nitrogen pressure test before pulling vacuum | 1 | 3 | 4 |
 | Checks vacuum pump oil (clean and correct level) | 1 | 3 | 4 |
 | Connects large-diameter hoses (½") directly to service ports | 1 | 3 | 4 |
@@ -306,8 +306,8 @@
 
 ## MODULE 13: Refrigerant Charging
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Verifies correct refrigerant type (R-454B) | 1 | 3 | 4 |
 | Confirms system passed pressure and vacuum tests before charging | 1 | 3 | 4 |
 | Measures line set length with tape measure (does not estimate) | 2 | 3 | 4 |
@@ -322,8 +322,8 @@
 
 ## MODULE 14: Line Set Routing & Wall Penetrations
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Plans shortest practical route and marks penetration locations | 1 | 3 | 4 |
 | Locates and confirms joist bay before drilling (exploratory hole if needed) | 1 | 3 | 4 |
 | Uses Super Hawg safely (two hands, solid footing, stages drilling) | 1 | 3 | 4 |
@@ -339,8 +339,8 @@
 
 ## MODULE 15: Wiring the Jetson Hub
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Installs Jetson thermostat and baseplate level on wall | 1 | 3 | 4 |
 | Sets correct dip switch (SW8-1 = ON) and ENC1 rotary dial (= 1) | 1 | 3 | 4 |
 | Correctly strips wires to proper strip length (no nicks or stray strands) | 2 | 3 | 4 |
@@ -355,8 +355,8 @@
 
 ## MODULE 16: Hub Provisioning
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Explains what provisioning means and why it is required | 1 | 3 | 4 |
 | Confirms all wiring is complete and dip switches are correctly set before powering on | 1 | 3 | 4 |
 | Follows correct Hub initialization sequence (unplug T&H sensor, power on, wait, reconnect) | 1 | 3 | 4 |
@@ -370,8 +370,8 @@
 
 ## MODULE 17: System Commissioning
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Verifies all pre-commissioning checklist items (wiring, dip switches, valves, power, Emporia) | 1 | 3 | 4 |
 | Initializes ODU correctly (2 middle buttons → 01-0 OK → 02-1 OK; waits for "0 1") | 1 | 3 | 4 |
 | Drills and installs supply psychrometer, return psychrometer, and manometer probes correctly | 1 | 3 | 4 |
@@ -387,8 +387,8 @@
 
 ## SAFETY — All Modules
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Wears safety glasses during all hands-on activities | 3 | 3 | 4 |
 | Wears gloves during all hands-on activities | 3 | 3 | 4 |
 | Confirms absence of voltage before electrical work | 3 | 3 | 4 |
@@ -406,8 +406,8 @@
 
 ## PROFESSIONALISM — All Modules
 
-| Skill | Helper | Technician | Lead |
-|-------|--------|------------|------|
+| Skill | Apprentice | Installer | Lead |
+|-------|------------|-----------|------|
 | Maintains clean and tidy work area throughout the day | 3 | 3 | 4 |
 | Returns all tools/systainer kits to correct storage after each activity | 3 | 3 | 4 |
 | Uses Notion app to look up answers before asking instructor | 2 | 3 | 4 |

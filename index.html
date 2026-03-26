@@ -3,35 +3,316 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jetson Installer Skills Matrix</title>
+  <title>Installer Skills Matrix — Jetson</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 0 24px 60px;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #F5F0E6;
       color: #111;
-      background: #fff;
+      min-height: 100vh;
     }
-    h1 { font-size: 1.8rem; margin-bottom: 4px; }
-    h2 { font-size: 1.2rem; background: #1f2937; color: #fff; padding: 8px 12px; margin-top: 40px; border-radius: 4px; }
-    h3 { font-size: 1rem; color: #1e40af; background: #eff6ff; padding: 4px 10px; border-radius: 3px; }
-    table { border-collapse: collapse; width: 100%; margin: 12px 0 24px; font-size: 0.875rem; }
-    th { background: #1f2937; color: #fff; padding: 8px 12px; text-align: left; }
-    th:not(:first-child) { text-align: center; }
-    td { border: 1px solid #d1d5db; padding: 7px 12px; vertical-align: top; }
-    td:not(:first-child) { text-align: center; font-weight: 600; }
-    tr:nth-child(even) td { background: #f9fafb; }
-    td:nth-child(2) { color: #92400e; }
-    td:nth-child(3) { color: #1d4ed8; }
-    td:nth-child(4) { color: #065f46; }
-    hr { border: none; border-top: 1px solid #e5e7eb; margin: 32px 0; }
-    p { line-height: 1.6; }
+
+    /* ── Header ── */
+    header {
+      background: #1B3A28;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 32px;
+      width: auto;
+    }
+    header .badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #3DD56D;
+      border: 1px solid #3DD56D;
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+
+    /* ── Page title ── */
+    .page-title {
+      background: #1B3A28;
+      padding: 48px 40px 52px;
+      border-bottom: 4px solid #3DD56D;
+    }
+    .page-title h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+    .page-title p {
+      margin-top: 10px;
+      color: #a8c5b0;
+      font-size: 0.95rem;
+      font-weight: 400;
+    }
+
+    /* ── Main content ── */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 48px 40px 80px;
+    }
+
+    /* ── Legend ── */
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 48px;
+      padding: 24px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e2ddd3;
+    }
+    .legend-title {
+      width: 100%;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #6b6b6b;
+      margin-bottom: 4px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8rem;
+      color: #333;
+    }
+    .legend-dot {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+
+    /* ── Roles legend ── */
+    .roles-bar {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 48px;
+      flex-wrap: wrap;
+    }
+    .role-card {
+      flex: 1;
+      min-width: 180px;
+      padding: 16px 20px;
+      border-radius: 10px;
+      border: 1px solid #e2ddd3;
+    }
+    .role-card .role-name {
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+    }
+    .role-card .role-desc {
+      font-size: 0.78rem;
+      line-height: 1.5;
+      color: #555;
+    }
+    .role-apprentice { background: #FEF9EE; border-color: #F6C843; }
+    .role-apprentice .role-name { color: #92600A; }
+    .role-installer { background: #EEF4FF; border-color: #6B9EF8; }
+    .role-installer .role-name { color: #1A3A8F; }
+    .role-lead { background: #EDFAF3; border-color: #3DD56D; }
+    .role-lead .role-name { color: #1B3A28; }
+
+    /* ── Module sections ── */
+    #content h1 { display: none; }
+
+    #content h2 {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #fff;
+      background: #1B3A28;
+      padding: 10px 16px;
+      border-radius: 8px 8px 0 0;
+      margin-top: 48px;
+      margin-bottom: 0;
+    }
+
+    #content h3 {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #1B3A28;
+      background: #D6EDE0;
+      padding: 8px 16px;
+      margin-top: 0;
+      margin-bottom: 0;
+      border-left: 3px solid #3DD56D;
+    }
+
+    #content hr {
+      display: none;
+    }
+
+    #content p {
+      display: none;
+    }
+
+    /* ── Tables ── */
+    #content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 0 2px;
+      font-size: 0.82rem;
+      background: #fff;
+      border: 1px solid #e2ddd3;
+    }
+
+    #content table:last-of-type {
+      border-radius: 0 0 8px 8px;
+      overflow: hidden;
+      margin-bottom: 0;
+    }
+
+    #content thead tr th {
+      background: #2C5235;
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border: none;
+    }
+
+    #content thead tr th:not(:first-child) {
+      text-align: center;
+      width: 110px;
+    }
+
+    #content tbody tr td {
+      padding: 9px 14px;
+      border-bottom: 1px solid #ede9e0;
+      vertical-align: middle;
+      color: #222;
+      line-height: 1.45;
+    }
+
+    #content tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    #content tbody tr:nth-child(even) td {
+      background: #FAF8F2;
+    }
+
+    /* Role columns */
+    #content tbody tr td:nth-child(2),
+    #content tbody tr td:nth-child(3),
+    #content tbody tr td:nth-child(4) {
+      text-align: center;
+      font-weight: 700;
+      font-size: 1rem;
+      width: 110px;
+    }
+
+    /* Apprentice col */
+    #content tbody tr td:nth-child(2) { color: #92600A; }
+    /* Installer col */
+    #content tbody tr td:nth-child(3) { color: #1A3A8F; }
+    /* Lead col */
+    #content tbody tr td:nth-child(4) { color: #1B3A28; }
+
+    /* ── Footer ── */
+    footer {
+      background: #1B3A28;
+      color: #a8c5b0;
+      text-align: center;
+      padding: 24px;
+      font-size: 0.78rem;
+    }
+    footer span { color: #3DD56D; font-weight: 600; }
   </style>
 </head>
 <body>
-  <div id="content">Loading...</div>
+
+  <header>
+    <img src="jetson-logo.png" alt="Jetson" />
+    <span class="badge">Installer Skills Matrix</span>
+  </header>
+
+  <div class="page-title">
+    <h1>Installer Skills Matrix</h1>
+    <p>Expected proficiency levels by role across all JetStart training modules</p>
+  </div>
+
+  <main>
+
+    <!-- Proficiency legend -->
+    <div class="legend">
+      <div class="legend-title">Proficiency Scale</div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:#f3f4f6;color:#555">0</div>
+        Not Trained
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:#fee2e2;color:#b91c1c">1</div>
+        In Training — requires direct supervision
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:#fef9c3;color:#92600A">2</div>
+        Supervised — can perform with oversight
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:#dbeafe;color:#1A3A8F">3</div>
+        Independent — performs to Jetson standard
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background:#EDFAF3;color:#1B3A28">4</div>
+        Can Train Others — mastery level
+      </div>
+    </div>
+
+    <!-- Role cards -->
+    <div class="roles-bar">
+      <div class="role-card role-apprentice">
+        <div class="role-name">Apprentice</div>
+        <div class="role-desc">Level 1–2 on core skills. Shadows and assists. Does not perform technical scopes independently.</div>
+      </div>
+      <div class="role-card role-installer">
+        <div class="role-name">Installer</div>
+        <div class="role-desc">Level 3 across all core skills. Fully independent on the job. No supervision required.</div>
+      </div>
+      <div class="role-card role-lead">
+        <div class="role-name">Lead</div>
+        <div class="role-desc">Level 4 across core skills. Runs the crew, coaches apprentices, owns quality on site.</div>
+      </div>
+    </div>
+
+    <div id="content">Loading...</div>
+
+  </main>
+
+  <footer>
+    <img src="jetson-logo.png" alt="Jetson" style="height:20px;opacity:0.6;margin-bottom:8px;display:block;margin-left:auto;margin-right:auto;" />
+    Built from the <span>JetStart Leader's Guide</span> · Jetson Field Operations
+  </footer>
+
   <script>
     fetch("Installer_Skills_Matrix.md")
       .then(r => r.text())
