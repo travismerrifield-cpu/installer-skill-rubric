@@ -334,15 +334,6 @@
       vertical-align: top;
     }
 
-    /* Role columns */
-    #content table th:nth-child(3),
-    #content table th:nth-child(4),
-    #content table th:nth-child(5),
-    #content table td:nth-child(3),
-    #content table td:nth-child(4),
-    #content table td:nth-child(5) {
-      display: none;
-    }
 
     /* ── Footer ── */
     footer {
@@ -518,18 +509,37 @@
 
     function addQualityMetricColumn() {
       document.querySelectorAll("#content table").forEach(table => {
-        // Add header after first th
         const headerRow = table.querySelector("thead tr");
+        const bodyRows = table.querySelectorAll("tbody tr");
+
+        // Hide role columns (Apprentice, Installer, Lead) in header
+        if (headerRow) {
+          [2, 3, 4].forEach(i => {
+            if (headerRow.children[i]) headerRow.children[i].style.display = "none";
+          });
+        }
+
+        // Hide role columns in every body row
+        bodyRows.forEach(row => {
+          [2, 3, 4].forEach(i => {
+            if (row.children[i]) row.children[i].style.display = "none";
+          });
+        });
+
+        // Add Quality Metric header
         if (headerRow) {
           const th = document.createElement("th");
           th.textContent = "Quality Metric";
           headerRow.insertBefore(th, headerRow.children[1]);
         }
-        // Add empty cell after first td in each body row
-        table.querySelectorAll("tbody tr").forEach(row => {
+
+        // Add one merged Quality Metric cell spanning all body rows
+        if (bodyRows.length > 0) {
           const td = document.createElement("td");
-          row.insertBefore(td, row.children[1]);
-        });
+          td.rowSpan = bodyRows.length;
+          td.style.verticalAlign = "top";
+          bodyRows[0].insertBefore(td, bodyRows[0].children[1]);
+        }
       });
     }
 
